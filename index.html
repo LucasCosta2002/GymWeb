@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArnoldGym</title>
+    <!-- css -->
+    <link rel="stylesheet" href="build/css/app.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome iconos  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swipper -->
+    <link
+    rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <header class="header contenedor">
+        <a href="/" class="header__logo"><span>Arnold</span>Gym</a>
+
+        <div class="mobile-menu">
+            <img src="build/img/menu-hamburguesa.png" alt="menu desplegable">
+        </div>
+
+        <nav class="navegacion">
+            <a class="navegacion__link" href="#inicio">Inicio</a>
+            <a class="navegacion__link" href="#nosotros">Nosotros</a>
+            <a class="navegacion__link" href="#caracteristicas">Caracteristicas</a>
+            <a class="navegacion__link" href="#precios">Precios</a>
+            <a class="navegacion__link" href="#entrenadores">Entrenadores</a>
+            <a class="navegacion__link" href="#blogs">Blogs</a>
+        </nav>
+    </header>
+    
+    <section class="inicio" id="inicio">
+        <div class="inicio__contenido contenedor">
+            <h3>Se fuerte, se fitnes</h3>
+            <span>¡No te dejes vencer por las excusas!</span>
+            <a href="#">¡Empezar ya!</a>
+        </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <div class="nosotros__grid contenedor">
+            
+            <div class="nosotros__imagen">
+                <picture>
+                    <source srcset="build/img/about-img.avif" type="image/avif">
+                    <source srcset="build/img/about-img.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/about-img.jpg" alt="imagen nosotros">
+                </picture>
+            </div>
+
+            <div class="nosotros__contenido">
+                <span>Nosotros</span>
+                <h3>Cada día es una oportunidad para ser mejor</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique minima, culpa nobis magnam, exercitationem quo maiores, consectetur voluptatem repellendus dolore magni sint cumque quos. Similique ea minima culpa esse! Repellendus?</p>
+                <div class="apartados__grid">
+                    <div class="apartado">
+                        <h3>Cuerpo y mente</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="apartado">
+                        <h3>Vida saludable</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="apartado">
+                        <h3>Estrategias</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="apartado">
+                        <h3>Ejercicio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+                <a class="nosotros__enlace" href="#">Leer más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="caracteristicas contenedor" id="caracteristicas">
+        <h2 class="heading"> <span>Caracteristicas del Gym</span> </h2>
+
+        <div class="box__grid">
+
+            <div class="box">
+                <div class="box__imagen">
+                    <picture>
+                        <source srcset="build/img/f-img-1.avif" type="image/avif">
+                        <source srcset="build/img/f-img-1.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/f-img-1.jpg" alt="imagen box">
+                    </picture>
+                </div>
+                <div class="box__contenido">
+                    <img loading="lazy" src="build/img/icon-1.png" alt="icono gym">
+                    <h3>Body Building</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur </p>
+                    <a href="#" class="box__enlace">Leer más</a>
+                </div>
+            </div>
+
+            <div class="box ">
+                <div class="box__imagen">
+                    <picture>
+                        <source srcset="build/img/f-img-2.avif" type="image/avif">
+                        <source srcset="build/img/f-img-2.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/f-img-2.jpg" alt="imagen box">
+                    </picture>
+                </div>
+                <div class="box__contenido">
+                    <img loading="lazy" src="build/img/icon-2.png" alt="icono gym">
+                    <h3>Gym para hombres</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur </p>
+                    <a href="#" class="box__enlace">Leer más</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__imagen">
+                    <picture>
+                        <source srcset="build/img/f-img-3.avif" type="image/avif">
+                        <source srcset="build/img/f-img-3.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/f-img-3.jpg" alt="imagen box">
+                    </picture>
+                </div>
+                <div class="box__contenido">
+                    <img loading="lazy" src="build/img/icon-3.png" alt="icono gym">
+                    <h3>Gym para mujeres</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur </p>
+                    <a href="#" class="box__enlace">Leer más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="precios" id="precios">
+        <h2 class="heading contenedor"> <span>Precios</span> </h2>
+        <div class="precios__grid ">
+
+            <div class="plan">
+                <h3>Plan Básico</h3>
+                <div class="precio"><span>$</span>3000<span> /mes</span></div>
+                <div class="precio__lista">
+                    <p><i class="fa-solid fa-check"></i>Ejercicios de cardio</p>
+                    <p><i class="fa-solid fa-check"></i>Musculacion</p>
+                    <p><i class="fa-solid fa-check"></i>Tres veces por semana</p>
+                </div>
+                <a href="#" class="plan__enlace">Inscribirme</a>
+            </div>
+
+            <div class="plan premium">
+                <h3>Plan Premium</h3>
+                <div class="precio"><span>$</span>5000<span> /mes</span></div>
+                <div class="precio__lista">
+                    <p><i class="fa-solid fa-check"></i>Entrenador personal</p>
+                    <p><i class="fa-solid fa-check"></i>Ejercicios de cardio</p>
+                    <p><i class="fa-solid fa-check"></i>Musculacion</p>
+                    <p><i class="fa-solid fa-check"></i>Pase libre</p>
+                    <p><i class="fa-solid fa-check"></i>Plan alimenticio</p>
+                    <p><i class="fa-solid fa-check"></i>Resultados totales</p>
+                </div>
+                <a href="#" class="plan__enlace">Inscribirme</a>
+            </div>
+
+            <div class="plan">
+                <h3>Plan Intermedio</h3>
+                <div class="precio"><span>$</span>4500<span> /mes</span></div>
+                <div class="precio__lista">
+                    <p><i class="fa-solid fa-check"></i>Ejercicios de cardio</p>
+                    <p><i class="fa-solid fa-check"></i>Musculacion</p>
+                    <p><i class="fa-solid fa-check"></i>Pase libre</p>
+                    <p><i class="fa-solid fa-check"></i>Resultados totales</p>
+                </div>
+                <a href="#" class="plan__enlace">Inscribirme</a>
+            </div>
+        </div>
+    </main>
+    
+    <section class="entrenadores contenedor" id="entrenadores">
+        <h2 class="heading"><span>Entrenadores</span></h2>
+
+        <div class="entrenadores__grid">
+
+            <div class="entrenador">
+                <picture>
+                    <source srcset="build/img/trainer-1.avif" type="image/avif">
+                    <source srcset="build/img/trainer-1.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/trainer-1.jpg" alt="imagen entrenador">
+                </picture>
+                <div class="entrenador__contenido">
+                    <span>Entrenador Experto</span>
+                    <h3>Lucas Costamagna</h3>
+                    <div class="entrenador__redes">
+                        <a href="https://www.instagram.com/lucas_costamagna/" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entrenador">
+                <picture>
+                    <source srcset="build/img/trainer-2.avif" type="image/avif">
+                    <source srcset="build/img/trainer-2.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/trainer-2.jpg" alt="imagen entrenador">
+                </picture>
+                <div class="entrenador__contenido">
+                    <span>Entrenador Experto</span>
+                    <h3>Lucas Costamagna</h3>
+                    <div class="entrenador__redes">
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/"<i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="entrenador">
+                <picture>
+                    <source srcset="build/img/trainer-3.avif" type="image/avif">
+                    <source srcset="build/img/trainer-3.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/trainer-3.jpg" alt="imagen entrenador">
+                </picture>
+                <div class="entrenador__contenido">
+                    <span>Entrenador Experto</span>
+                    <h3>Lucas Costamagna</h3>
+                    <div class="entrenador__redes">
+                        <a href="https://www.instagram.com/lucas_costamagna/" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="entrenador">
+                <picture>
+                    <source srcset="build/img/trainer-4.avif" type="image/avif">
+                    <source srcset="build/img/trainer-4.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/trainer-4.jpg" alt="imagen entrenador">
+                </picture>
+                <div class="entrenador__contenido">
+                    <span>Entrenador Experto</span>
+                    <h3>Lucas Costamagna</h3>
+                    <div class="entrenador__redes">
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/lucas_costamagna/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="baner">
+        <span>Unite ya</span>
+        <h3>¡Podés obtener hasta un 50% de descuento!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi molestias quo iste saepe hic debitis illum in, fugit dolores ducimus quidem minima maxime doloremque. Repellendus autem doloribus commodi ipsum.</p>
+        <a href="#">Unirme</a>
+    </section>
+
+    <section class="review contenedor">
+
+        <div class="information">
+            <span>Testimonios</span>
+            <h3>Lo que dicen nuestros miembros</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?</p>
+            <a href="#">Leer mas</a>
+        </div>
+    
+        <div class="swiper review-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="build/img/pic-1.png" alt="imagen user">
+                        <div class="info">
+                            <h3>Lucas Costamagna</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="build/img/pic-2.png" alt="">
+                        <div class="info">
+                            <h3>Lucas Costamagna</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="build/img/pic-3.png" alt="">
+                        <div class="info">
+                            <h3>Lucas Costamagna</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                    <div class="user">
+                        <img src="build/img/pic-4.png" alt="">
+                        <div class="info">
+                            <h3>Lucas Costamagna</h3>
+                            <span>designer</span>
+                        </div>
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <section class="blogs contenedor" id="blogs">
+        <h2 class="heading"><span>Blogs</span></h2>
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="build/img/blog-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">por Lucas</a> <span>|</span> <a href="#">21 de abril, 2022</a> </div>
+                        <h3>El gimnasio y las emociones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <a href="#" class="blog__enlace">Leer mas</a>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="build/img/blog-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">por Lucas</a> <span>|</span> <a href="#">2 de mayo, 2022</a> </div>
+                        <h3>El gimnasio y las emociones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <a href="#" class="blog__enlace">Leer mas</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="build/img/blog-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">por Lucas</a> <span>|</span> <a href="#">21 de junio, 2022</a> </div>
+                        <h3>El gimnasio y las emociones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <a href="#" class="blog__enlace">Leer mas</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="build/img/blog-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">por Lucas</a> <span>|</span> <a href="#">21 de agosto, 2022</a> </div>
+                        <h3>El gimnasio y las emociones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <a href="#" class="blog__enlace">Leer mas</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="build/img/blog-5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="link"> <a href="#">por Lucas</a> <span>|</span> <a href="#">21 de noviembre, 2022</a> </div>
+                        <h3>El gimnasio y las emociones</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
+                        <a href="#" class="blog__enlace">Leer mas</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+        </div>    
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+
+            <div class="footer__box">
+                <h3>Enlaces Rapidos</h3>
+                <a href="/" class="links">Inicio</a>
+                <a href="#nosotros" class="links">Acerca de</a>
+                <a href="#caracteristicas" class="links">Caracteristicas</a>
+                <a href="#precios" class="links">Precios</a>
+                <a href="#entrenadores" class="links">Entrenadores</a>
+                <a href="#blogs" class="links">Blogs</a>
+            </div>
+            
+            <div class="footer__box">
+                <h3>Horarios</h3>
+                <p> Lunes : <i> 7:00 - 22:30 </i> </p>
+                <p> Martes : <i> 7:00 - 22:30 </i> </p>
+                <p> Miercoles : <i> 7:00 - 22:30 </i> </p>
+                <p> Jueves : <i> 7:00 - 22:30 </i> </p>
+                <p> Viernes : <i> 7:00 - 22:30 </i> </p>
+                <p> Sabados: <i> cerrado </i> </p>
+            </div>
+
+            <div class="footer__box">
+                <h3>Como contactarnos</h3>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+                <p> <i class="fas fa-envelope"></i> correo@correo.com </p>
+                <p> <i class="fas fa-map"></i> Buenos Aires, Argentina </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-whatsapp"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copy"> Creado por <span>Lucas Costamagna</span> | Derechos Reservados &copy;</p>
+    </footer>
+    <!-- app js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.js" integrity="sha512-TsDUjQW16/G8fz4gmgTOBW2s2Oi6TPUtQ6/hm+TxZZdkQtQrK5xEFIE0rgDuz5Cl1xQU1u3Yer7K5IuuBeiCqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros {
+    padding: 5rem;
+
+    &__grid {
+        @include m.grid (1,2rem);
+        @include m.desktop{
+            @include m.grid (2,8rem);
+            align-items: center;
+        }
+    }
+
+    &__imagen {
+        position: relative;
+        img{
+            padding: 2rem;
+        }
+
+        &::before, &::after{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            background: v.$primario;
+            height: 15rem;
+            width: 15rem;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__contenido {
+        span {
+            color: v.$primario;
+            font-size: 2rem;
+        }
+        h3 {
+            color: v.$blanco;
+            font-size: 4rem;
+            margin: .5rem 0 0 0;
+            font-weight: 500;
+        }
+        p{
+            color: v.$gris;
+            margin: 0;
+            font-size: 1.5rem;
+            padding: .5rem 0;
+        }
+
+    }
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco); 
+        margin-top: 1rem;
+        @include m.tablet {
+            width: 40%;
+        }
+    }
+}
+
+.apartados__grid {
+    margin-top: 1rem;
+        @include m.grid (1,2rem);
+        @include m.tablet {
+            @include m.grid (4,2rem);
+        }
+        @include m.desktop {
+            @include m.grid (2,2rem);
+        }
+}
+.apartado {
+
+    h3 {
+        font-size: 2rem;
+        margin: 0;
+        &::after{
+            content: '';
+            display: block;
+            height: 0.5rem;
+            width: 50%;
+            background-color: v.$primario;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+}

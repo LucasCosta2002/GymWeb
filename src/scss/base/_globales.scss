@@ -1,0 +1,79 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    // scroll-behavior: smooth;
+    // scroll-padding-top: 5rem;
+    // overflow-x: hidden; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: v.$fuentePrincipal;
+    font-size: 1.6rem;
+    background-color: v.$negro;
+}
+p {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: #000;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #f00;
+}
+
+.heading {
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left: 0;
+        height: 1px;
+        background-color: v.$gris;
+        z-index: -1;
+    }
+    span {
+        border: 1px solid v.$gris;
+        padding: 1rem;
+        background-color: v.$negro;
+        color: v.$primario;
+        border-radius: 1rem;
+        z-index: 1;
+    }
+}

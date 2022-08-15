@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.inicio{        
+    
+    background-image: url(../img/home-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -20rem;
+    padding: 8rem 0;
+    @include m.desktop {
+        background-position: 0 -22rem; 
+    }
+
+
+    &__contenido {
+        color: v.$blanco;
+        @include m.tablet {
+            padding: 5rem 0;  
+        }
+
+        h3{
+            font-weight: 400;
+            font-size: 2rem;
+            text-align: left;
+            color: v.$primario;
+            margin: 1rem auto;
+
+        }
+        span {
+            font-size: 3rem;
+            text-align: left;
+            width: 50%;
+            display: block;
+            font-weight: 500;
+            @include m.tablet {
+                font-size: 5rem;
+            }
+        }
+        a{
+            @include m.boton(v.$primario, v.$blanco);
+            margin-top: 4rem;   
+            display: inline-block;
+            width: auto;         
+        }
+    }
+}

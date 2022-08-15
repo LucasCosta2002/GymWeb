@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.precios {
+    &__grid {
+        @include m.tablet {
+             @include m.grid (3,1rem);
+        }
+    }
+}
+
+.plan {
+    text-align: center;
+    padding: 2rem;
+    h3 {
+        font-size: 2.5rem;
+        color: v.$blanco;
+        margin: 0 0 2rem 0;
+    }
+
+    .precio {
+        color: v.$primario;
+        margin: 0 0 2rem 0;
+        font-size: 3rem;
+        font-weight: bold;
+        span {
+            color: v.$blanco;
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        color: v.$gris;
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+
+    .fa-check{
+        margin-right: .5rem;
+        color: v.$primario;
+    }
+
+    &.premium {
+        background-color: v.$negroMate;
+        transition: transform .3s;
+        &:hover {
+            transform: scale(1.04)
+        }
+    }
+
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco);
+        display: inline-block;
+        margin-top: 2rem;
+        width: 70%;
+    }
+}
+

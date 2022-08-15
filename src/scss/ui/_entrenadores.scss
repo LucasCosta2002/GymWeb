@@ -1,0 +1,64 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.entrenadores {
+    
+    &__grid {
+        @include m.tablet {
+            @include m.grid (3,2rem);
+        }
+        @include m.desktop {
+            @include m.grid (4,2rem);
+        }
+    }
+
+    margin-bottom: 20rem;
+}
+
+.entrenador {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+    @include m.tablet {
+        margin-bottom: 0;
+    }
+    &__contenido {
+        background-color: v.$negroMate;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+        transform: translateY(6.5rem);
+        padding: 2rem;
+        transition: all .3s;
+        span {
+            color: v.$primario;
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            color: v.$blanco;
+            font-size: 1.7rem;
+        }
+    }
+    &:hover &__contenido{
+        transform: translateY(0);
+    }
+
+    &__redes {
+        padding-top: 2rem;
+        margin-top: 1.5rem;
+        border-top: 0.1rem solid v.$gris;
+
+        a{
+            font-size: 2rem;
+            color: v.$blanco;
+            margin-right: 1.5rem;
+            &:hover {
+                color: v.$primario;
+            }
+        }
+    }
+}
